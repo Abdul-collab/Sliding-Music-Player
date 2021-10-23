@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Music Player In HTML/CSS/JS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-KwxQKNj2D0XKEW5O/Y6haRH39PE/xry8SAoLbpbCMraqlX7kUP6KHOnrlrtvuJLR" crossorigin="anonymous">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="heading">
+                              <h1>Music Player</h1>
+                              <h6>( click slides or press left & right arrow keys )</h6>
+</div>
+
+<div class="container">
+
+  <!---------------------------------- first card------------------------------ -->
+
+  <div class="ui-card">
+
+    <div class="names">
+      <p>NextRo--Anatomy</p>
+      <p>Fed_Up--Bazanji </p>
+      <p>Brennan_savage--Look-at-me-now</p>
+      <p> Billie_Ellish--bad-guy-remix</p>
+      <p>Aaron_Smith--Dancin</p>
+      <p>Roberto_kan_Remi--Plain-Jane</p>
+      <p>Lil_Nas_X--Old-Town-Road
+      <p>Masked_Wolf--Astronaut_In_the-Ocean</p>
+      <p>Imagine_Dragons--Believer</p>
+      <p>Maneskin--Beggin</p>
+      <p>Aurora--Runaway</p>
+      <p>Otnicka--Peaky_Blinder</p>
+      <p>Shaed-Trampoline</p>
+      <p>Angetenar--Rompasso</p>
+      <p>Lost_Sky--Fearless</p>
+      <p>Dynoro & Gigi D'Agostino--In-my-mind</p>
+      <p>DVRST--Close-eyes</p>
+      <p>Arijit_Singh-Jaan_nisaar</p>
+      <p>Rauf & Faik--childhood</p>
+      <p>Stefflon_Don--16-Short</p>
+      <p>Sub_Urban--Cradles</p>
+      <p>Rauf & Faik--lela-lela-lela</p>
+      <p>Miyagi & Andy-Panda-Kosandra</p>
+      <p>Instrumental_remix-Lordly</p> 
+  </div>
+
+  </div>
+
+<!-- -------------------------------------second card ----------------------------->
+  <div class="ui-card">
+
+    <div class="player">
+      <div class="track-art">
+        <div class="track-name">Track Name</div>
+        <div class="track-artist">Track Artist</div></div>
+
+        <span class="like"> <i class="far fa-heart" onclick="Toggle1()" id="btnh1"></i></span>
+        <span class="repeat"> <i class="fas fa-repeat" onclick="Toggle2()" id="btnh2"></i></span>
+        <span class="random"><i class="fas fa-random" onclick="Toggle3()" id="btnh3"></i></span>
+          
+  
+        <div class="buttons">
+            <span class="prev-track" onclick="prevTrack()"><i class="fa fa-step-backward fa-2x"></i></span>
+            <span class="playpause-track" onclick="playpauseTrack()"><i class="far fa-play-circle fa-5x"></i></span>
+            <span class="next-track" onclick="nextTrack()"><i class="fa fa-step-forward fa-2x"></i></span>
+        </div>
+  
+        <div class="slider_container">
+            <div class="current-time">00:00</div>
+            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+            <div class="total-duration">00:00</div>
+        </div>
+  
+        <div class="slider_container">
+            <i class="fa fa-volume-down"></i>
+            <input type="range" min="0" max="100" value="50" class="volume_slider" onchange="setVolume()">
+            <i class="fa fa-volume-up"></i>
+        
+      </div>
+  
+  </div>
+  
+    
+    
+  
+    </div>
+
+<!-- ------------------------------------------third  card ---------------------------------------------->
+  <div class="ui-card">
+
+    <div class="box">
+      <div class="fav-list">
+        <h3>favourite</h3>
+      </div>
+      <div class="jaaz">
+        <h3>Bollywood</h3>
+      </div>
+      <div class="trending">
+        <h3>Hollywood</h3>
+      </div>
+  </div>
+  
+
+  </div>
+</div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="script.js"></script>
+
+</body>
+</html>
